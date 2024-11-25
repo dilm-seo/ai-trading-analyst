@@ -8,7 +8,7 @@ interface NewsItem {
 }
 
 export const analyzeFundamentals = async (news: NewsItem[]) => {
-  const prompt = 'In french, Analyze these latest forex news items and identify potential trading opportunities. For each significant opportunity, provide:
+  const prompt = `Analyze these latest forex news items and identify potential trading opportunities. For each significant opportunity, provide in french language:
 - Currency pair affected
 - Sentiment (bullish/bearish/neutral)
 - Confidence level (0-100)
