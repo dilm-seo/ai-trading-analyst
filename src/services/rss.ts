@@ -11,7 +11,7 @@ interface NewsItem {
 export const fetchForexNews = async (): Promise<NewsItem[]> => {
   try {
     // Use a CORS proxy to fetch the RSS feed
-    const response = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.forexlive.com/feed/technicalanalysis'));
+    const response = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.forexlive.com/feed/cryptocurrency'));
     const xmlData = await response.text();
     
     const parser = new XMLParser({
